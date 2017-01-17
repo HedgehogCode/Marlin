@@ -407,7 +407,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
   // X and Y offsets must be integers
   #define X_PROBE_OFFSET_FROM_EXTRUDER -21
   #define Y_PROBE_OFFSET_FROM_EXTRUDER -20
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER -0.7
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -0.9
 
   #define Z_RAISE_BEFORE_HOMING 4       // (in mm) Raise Z before homing (G28) for Probe Clearance.
                                         // Be sure you have this distance over your Z_MAX_POS in case
@@ -488,11 +488,11 @@ const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of
 // default settings
 
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,400,151.23}  // default steps per unit for Ultimaker
-#define DEFAULT_MAX_FEEDRATE          {300, 300, 5, 25}    // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {3000,3000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
+#define DEFAULT_MAX_FEEDRATE          {300, 300, 2, 25}    // (mm/sec)
+#define DEFAULT_MAX_ACCELERATION      {180,180,10,200}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
-#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  3000   // X, Y, Z and E max acceleration in mm/s^2 for retracts
+#define DEFAULT_ACCELERATION          60    // X, Y, Z and E max acceleration in mm/s^2 for printing moves
+#define DEFAULT_RETRACT_ACCELERATION  60   // X, Y, Z and E max acceleration in mm/s^2 for retracts
 
 // Offset of the extruders (uncomment if using more than one and relying on firmware to position when changing).
 // The offset has to be X=0, Y=0 for the extruder 0 hotend (default extruder).
